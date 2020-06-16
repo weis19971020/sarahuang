@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #6a93ba;
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #6a6eba;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #ba6aaa;
+  border-radius: 50%;
+  border: 2px solid #ba6aaa;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-225deg, #ff057c 0%, #ed4077 50%, #ed7d40 100%);
+  filter: blur(20px);
+  z-index: -1;
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Top {
+  font-family: 微軟正黑體;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+
+.mid {
+  font-family: 微軟正黑體;
+  font-size: 13px;
+  color: white;
+  font-weight: 800;
+}
+
+.bottom {
+  font-family: 微軟正黑體;
+  font-size: 25px;
+  color: #595959;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+}
+@keyframes falling {
+  0%,
+		100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100%, 0px);
+  }
+  100% {
+    transform: translate(0px, 100%);
+  }
+}
+.allbub [class*="bub"] {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  animation: falling 2s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 36.8276363905%;
+  top: 49.3749563124%;
+  animation-delay: -0.1s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 19.5144571535%;
+  top: 73.617890438%;
+  animation-delay: -0.2s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 36.2490369904%;
+  top: 47.5126444256%;
+  animation-delay: -0.3s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 22.3849685762%;
+  top: 67.593343716%;
+  animation-delay: -0.4s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 16.2264899847%;
+  top: 74.1427505364%;
+  animation-delay: -0.5s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 30.3534026005%;
+  top: 36.966402145%;
+  animation-delay: -0.6s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 32.5956252345%;
+  top: 43.9717042325%;
+  animation-delay: -0.7s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 36.5309316655%;
+  top: 44.1801162009%;
+  animation-delay: -0.8s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 14.0586149886%;
+  top: 60.8388311836%;
+  animation-delay: -0.9s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 79.3318399416%;
+  top: 65.9629784607%;
+  animation-delay: -1s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 90.3688065044%;
+  top: -7.5127964114%;
+  animation-delay: -1.1s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 46.4873700729%;
+  top: 87.6945186104%;
+  animation-delay: -1.2s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 35.9223720475%;
+  top: 75.2172528302%;
+  animation-delay: -1.3s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 29.1825220085%;
+  top: 30.4322824662%;
+  animation-delay: -1.4s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 52.4995947415%;
+  top: 54.4496251168%;
+  animation-delay: -1.5s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 9.8065960968%;
+  top: 83.0559509035%;
+  animation-delay: -1.6s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 10.4416948872%;
+  top: 60.358093299%;
+  animation-delay: -1.7s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 94.721701563%;
+  top: 32.8762307552%;
+  animation-delay: -1.8s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 66.7361661745%;
+  top: 11.5691644962%;
+  animation-delay: -1.9s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 18.8508698223%;
+  top: 18.4484773897%;
+  animation-delay: -2s;
+}
